@@ -1,0 +1,164 @@
+/* Base Styles */
+* {
+  font-family: "Source Code Pro", monospace;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+select,
+textarea {
+  border-radius: 5px;
+}
+
+/* Start of Contact Info Styles */
+body {
+  margin: 0;
+}
+header {
+  text-align: center;
+  border-bottom: double 10px darkslategray;
+}
+h1 {
+  margin-top: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: darkslategray;
+  font-size: 1rem;
+}
+h2,
+legend {
+  color: darkslategray;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+header p {
+  color: lightgrey;
+  margin-bottom: 2rem;
+}
+form legend {
+  margin: 1rem;
+  font-weight: bold;
+}
+.contact_info label {
+  color: darkslategray;
+  margin: 1rem;
+}
+.contact_info input,
+select,
+textarea {
+  background-color: rgb(243, 243, 243);
+  border: hidden;
+  padding: 1rem 3.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+input[type="text"]::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+input[type="email"] {
+  text-align: right;
+  font-style: italic;
+}
+.contact_info {
+  border-bottom: solid 2px darkslategray;
+}
+#zip {
+  border-bottom: 2rem;
+  width: 2%;
+}
+/* End of Contact Info Styles */
+/* Start of Newsletter Styles */
+.newsletter p,
+.checkbox_section,
+.radio_buttons {
+  color: darkslategray;
+  margin-left: 0.5rem;
+}
+
+textarea {
+  padding: 1rem 3em;
+  align-self: center;
+  margin: 8px 16px;
+  width: 161px;
+  height: 50px;
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"] {
+  margin: 7px;
+}
+input[type="submit"] {
+  background-color: darkturquoise;
+  color: white;
+  padding: 1rem 5.12rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: hidden;
+}
+/* End of Newsletter Styles */
+/* footer */
+footer p {
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
+/* end of footer */
+/* media queries */
+@media (min-width: 768px) {
+  .contact_info br {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .contact_info label {
+      margin-right: 
+  } */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    padding-left: 23rem;
+  }
+  textarea {
+    padding: 1rem 18rem;
+  }
+  input[type="submit"] {
+    padding: 1rem 20.7rem;
+  }
+  .contact_info br {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .container label {
+    margin: 0;
+    flex-basis: 25%;
+  }
+
+  .container input,
+  select {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    flex-basis: 75%;
+    flex-grow: 1;
+  }
+
+  #zip {
+    max-width: 25%;
+    justify-content: flex-start;
+  }
+  .zip {
+    justify-content: flex-start;
+  }
+}
